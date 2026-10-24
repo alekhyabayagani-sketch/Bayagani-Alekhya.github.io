@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alekhya | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111c31;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 6vw, 55px);
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #60a5fa;
+        }
+
+        .hero p, .description {
+            color: #cbd5e1;
+            max-width: 750px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 12px 22px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        h2.section-title {
+            color: #60a5fa;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #111c31;
+            border: 1px solid #263752;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #93c5fd;
+        }
+
+        .card p, .card li {
+            color: #cbd5e1;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #1e3a5f;
+            padding: 9px 15px;
+            border-radius: 7px;
+        }
+
+        .contact a {
+            color: #93c5fd;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            background: #111c31;
+            padding: 22px;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Alekhya.</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+
+    <h1>Hi, I'm <span>Alekhya Bayagani</span></h1>
+
+    <h2>Aspiring Software Development Engineer</h2>
+
+    <p>
+        I am a Computer Science and Engineering student passionate
+        about software development, Python, web technologies,
+        and Artificial Intelligence.
+        I enjoy solving problems and learning new technologies.
+    </p>
+
+    <a class="button" href="#projects">Explore My Projects</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p class="description">
+        I am pursuing B.Tech in Computer Science and Engineering
+        at Bapatla Women's Engineering College.
+        I have a strong interest in programming, databases,
+        Artificial Intelligence, and software engineering.
+        My career goal is to work as a Software Development
+        Engineer in a reputed company and continuously improve
+        my technical and communication skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>C</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+        <span>MySQL</span>
+        <span>Data Structures</span>
+        <span>Algorithms</span>
+        <span>Object-Oriented Programming</span>
+        <span>AWS</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Machine Learning</span>
+        <span>NLP</span>
+        <span>Generative AI</span>
+        <span>Flutter</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Campus Core</h3>
+
+            <p>
+                An Integrated College Administration Platform
+                designed to manage student records, faculty
+                details, and administrative activities.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                HTML, CSS, Python, NLP
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cash for Trash</h3>
+
+            <p>
+                A waste management platform that allows users
+                to sell recyclable materials such as plastic,
+                paper, glass, and metal and earn rewards.
+            </p>
+
+            <p>
+                The project encourages recycling and
+                environmental sustainability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Driver Drowsiness Detection</h3>
+
+            <p>
+                A real-time driver monitoring project that
+                analyzes eye blinks to identify possible
+                drowsiness and alert the driver.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, OpenCV, MediaPipe, Flask
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>B.Tech - Computer Science and Engineering</h3>
+            <p>Bapatla Women's Engineering College</p>
+            <p>2023 - 2027</p>
+            <p>CGPA: 9.0 / 10</p>
+        </div>
+
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>Hayagreeva Junior College, Chinthalapudi</p>
+            <p>2021 - 2023</p>
+            <p>Percentage: 94%</p>
+        </div>
+
+        <div class="card">
+            <h3>SSC</h3>
+            <p>Siddhartha High School, Chinnampeta</p>
+            <p>CGPA: 10.0 / 10</p>
+        </div>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications & Internships</h2>
+
+    <div class="card">
+        <ul>
+            <li>Oracle Certified Associate (OCA) - Oracle University</li>
+            <li>Cloud Computing with AWS - Virtual Internship</li>
+            <li>Artificial Intelligence - Virtual Internship</li>
+            <li>Programming Fundamentals using Python - Infosys Springboard</li>
+            <li>Object-Oriented Programming using Python - Infosys Springboard</li>
+            <li>Workshop on Generative AI</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="card">
+        <p>Email:
+            <a href="mailto:alekhyabayagani@gmail.com">
+                alekhyabayagani@gmail.com
+            </a>
+        </p>
+
+        <p>LinkedIn:
+            <a href="https://www.linkedin.com/in/bayagani-alekhya-515b86364/"
+               target="_blank" rel="noopener noreferrer">
+                Visit My LinkedIn Profile
+            </a>
+        </p>
+
+        <p>Location: Andhra Pradesh, India</p>
+        <p>Languages: English, Telugu</p>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © <span id="year"></span> Alekhya Bayagani |
+        Personal Portfolio
+    </p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>
